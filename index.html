@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Rushworth CV</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            margin-bottom: 30px;
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 36px;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .contact-item {
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .job {
+            margin-bottom: 20px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .job-details {
+            display: flex;
+            justify-content: space-between;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .skill-category {
+            width: 49%;
+            margin-bottom: 10px;
+        }
+        
+        .skill-list {
+            list-style-type: none;
+            padding-left: 0; /* Changed from 1 to 0 to ensure proper alignment */
+        }
+        
+        .skill-list li {
+            margin-bottom: 5px;
+            padding: 10px 5px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Different background colors for each skill category */
+        .programming-skills li {
+            background-color: rgba(52, 152, 219, 0.1); /* Light Blue */
+        }
+        
+        .engineering-skills li {
+            background-color: rgba(46, 204, 113, 0.1); /* Light Green */
+        }
+        
+        .analysis-skills li {
+            background-color: rgba(231, 76, 60, 0.1); /* Light Red */
+        }
+        
+        .database-skills li {
+            background-color: rgba(155, 89, 182, 0.1); /* Light Purple */
+        }
+        
+        .skill-list li span {
+            width: 150px;
+            flex: 1; /* Takes available space, pushing skill level to right */
+            font-weight: 500;
+        }
+        
+        .skill-level {
+            display: inline-block;
+            width: 150px;
+            height: 16px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-left: 10px; /* Add some space between skill name and indicator */
+        }
+        
+        /* Different colors for each skill category */
+        .programming-level span {
+            display: block;
+            height: 100%;
+            background-color: #3498db; /* Blue */
+        }
+        
+        .engineering-level span {
+            display: block;
+            height: 100%;
+            background-color: #2ecc71; /* Green */
+        }
+        
+        .analysis-level span {
+            display: block;
+            height: 100%;
+            background-color: #e74c3c; /* Red */
+        }
+        
+        .database-level span {
+            display: block;
+            height: 100%;
+            background-color: #9b59b6; /* Purple */
+        }
+        
+        .project {
+            margin-bottom: 15px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .cert-item {
+            margin-bottom: 10px;
+        }
+        
+        /* New styles for colored section panels */
+        section {
+            margin-bottom: 30px;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+        }
+        
+        section:nth-of-type(1) { /* Summary */
+            background-color: #fcfafa;
+        }
+        
+        section:nth-of-type(2) { /* Skills */
+            background-color: #fcfafa;
+        }
+        
+        section:nth-of-type(3) { /* Experience */
+            background-color: #fcfafa;
+        }
+        
+        section:nth-of-type(4) { /* Projects */
+            background-color: #fcfafa;
+        }
+        
+        section:nth-of-type(5) { /* Education */
+            background-color: #fcfafa;
+        }
+        
+        section:nth-of-type(6) { /* Certifications */
+            background-color: #fcfafa;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .skill-category {
+                width: 100%;
+            }
+            
+            section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>James Rushworth</h1>
+            <p>Data Analyst & Engineer</p>
+            <div class="contact-info">
+                <div class="contact-item">📧 <a href="mailto:james.rushworth@gmail.com" target="_blank" rel=noopener noreferrer"">james.rushworth@gmail.com</a></div>
+                <div class="contact-item">📱 (+44) xxxxxxxx</div>
+                <div class="contact-item">🔗 <a href="https://linkedin.com/in/james-rushworth-data" target="_blank">linkedin.com/in/james-rushworth-data</a></div>
+                <div class="contact-item">💻 <a href="https://github.com/databyrush" target="_blank">github.com/databyrush</a></div>
+                <div class="contact-item">📍 <a href="https://maps.app.goo.gl/n3fBDXRF4oCHoBFE9" target="_blank"> Liverpool, UK</a></div>
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Results-driven Data Analyst and Engineer with 4 years of experience transforming complex datasets into actionable insights. Passionate about solving business problems through data-driven decision making.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming & Tools</h3>
+                    <ul class="skill-list programming-skills">
+                        <li><span>SQL</span> <div class="skill-level programming-level"><span style="width: 80%"></span></div></li>
+                        <li><span>Python</span> <div class="skill-level programming-level"><span style="width: 20%"></span></div></li>
+                        <li><span>Power BI</span> <div class="skill-level programming-level"><span style="width: 90%"></span></div></li>
+                        <li><span>Spark</span> <div class="skill-level programming-level"><span style="width: 0%"></span></div></li>
+                        <li><span>DAX</span> <div class="skill-level programming-level"><span style="width: 60%"></span></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Engineering & Infrastructure</h3>
+                    <ul class="skill-list engineering-skills">
+                        <li><span>ETL Pipeline Development</span> <div class="skill-level engineering-level"><span style="width: 90%"></span></div></li>
+                        <li><span>Azure</span> <div class="skill-level engineering-level"><span style="width: 80%"></span></div></li>
+                        <li><span>Hadoop Ecosystem</span> <div class="skill-level engineering-level"><span style="width: 0%"></span></div></li>
+                        <li><span>Docker & Kubernetes</span> <div class="skill-level engineering-level"><span style="width: 5%"></span></div></li>
+                        <li><span>CI/CD</span> <div class="skill-level engineering-level"><span style="width: 65%"></span></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Analysis & Modeling</h3>
+                    <ul class="skill-list analysis-skills">
+                        <li><span>Statistical Analysis</span> <div class="skill-level analysis-level"><span style="width: 85%"></span></div></li>
+                        <li><span>Machine Learning</span> <div class="skill-level analysis-level"><span style="width: 80%"></span></div></li>
+                        <li><span>A/B Testing</span> <div class="skill-level analysis-level"><span style="width: 90%"></span></div></li>
+                        <li><span>Predictive Modeling</span> <div class="skill-level analysis-level"><span style="width: 75%"></span></div></li>
+                        <li><span>Data Mining</span> <div class="skill-level analysis-level"><span style="width: 85%"></span></div></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul class="skill-list database-skills">
+                        <li><span>PostgreSQL</span> <div class="skill-level database-level"><span style="width: 90%"></span></div></li>
+                        <li><span>MySQL</span> <div class="skill-level database-level"><span style="width: 85%"></span></div></li>
+                        <li><span>MongoDB</span> <div class="skill-level database-level"><span style="width: 70%"></span></div></li>
+                        <li><span>Snowflake</span> <div class="skill-level database-level"><span style="width: 75%"></span></div></li>
+                        <li><span>Redshift</span> <div class="skill-level database-level"><span style="width: 80%"></span></div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-title">Senior Data Engineer & Bi Analyst</div>
+                <div class="job-details">
+                    <span>Fujtisu</span>
+                    <span>January 2021 - Present</span>
+                </div>
+                <ul>
+                    <li>Experienced Power BI Engineer specializing in designing and implementing BI solutions using Tabular Models, Azure Synapse, SQL Database, and DevOps principles.</li>
+                    <li>Proficient in building efficient, scalable data models and optimizing data pipelines/warehousing for seamless data flow.</li>
+                    <li>Skilled in DAX and M Script for creating complex calculations and custom functions to extract meaningful insights.</li>
+                    Combines technical expertise with analytics and visualization to deliver actionable insights that support data-driven decision-making and business growth.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">Capacity Analyst</div>
+                <div class="job-details">
+                    <span>Fujtisu</span>
+                    <span>December 2008 - January 2021</span>
+                </div>
+                <ul>
+                    <li>Monitored, analyzed, investigated, and reported on diverse servers across the HMRC estate using BMC Performance Assurance.</li>
+                    <li>Provided predictive capacity reports to HMRC teams and projects, forecasting future utilization trends.</li>
+                    <li>Manipulated large datasets with SQL and presented the resulting data clearly to stakeholders using Excel.</li>
+                    <li>Maintained data flows, automated processes on Windows servers, ensured website updates, and managed data recovery after outages.</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-title">Technical Services Specialist</div>
+                <div class="job-details">
+                    <span>Fujtisu</span>
+                    <span>December 2004 - December 2008</span>
+                </div>
+                <ul>
+                    <li>Second line support specialist</li>
+                    <li>E-services within the HMRC estate</li>
+                    <li>Using SQL to edit data</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <div class="project-title">Project Data Pipeline Engineering & Analytics Solution</div>
+                <p>Engineered an automated data pipeline using SharePoint and Power BI, replacing manual PDF processes. Designed the data structure, integrated with MS Planner, and developed analytical dashboards and Excel models for improved management reporting and financial insights.</p>
+            </div>
+            
+            <div class="project">
+                <div class="project-title">Power BI Data Solution for Server Patch Management & Reporting</div>
+                <p>Developed a Power BI data model integrating disparate server update data, automating a multi-day manual Excel process. Reduced report time significantly and empowered the team lead with Power BI skills for self-sufficient maintenance and analysis.</p>
+            </div>
+            
+            <div class="project">
+                <div class="project-title">Azure Synapse Deployment Based on DP-900/DP-203 Study</div>
+                <p>Leveraged DP-900 certification and in-depth DP-203 curriculum study to design and implement Azure Synapse. Successfully built/tested a POC environment, subsequently deploying the validated configuration to production for enhanced cloud analytics.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <div class="job-title">Higher National Diploma</div>
+                <div class="job-details">
+                    <span>Leeds Metropolitan University</span>
+                    <span>1998 - 2001</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            
+            <div class="cert-item">
+                <div class="job-title">Microsoft Certified: Azure Data Fundamentals DP-900</div>
+                <div class="job-details">
+                    <span>Microsoft</span>
+                    <span>2025</span>
+                </div>
+            <div class="cert-item">
+                <div class="job-title">Microsoft Certified: Data Engineering on Microsoft Azure DP-203</div>
+                <div class="job-details">
+                    <span>Microsoft</span>
+                    <span>2025</span>
+                
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
